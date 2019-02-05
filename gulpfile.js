@@ -14,5 +14,5 @@ gulp.task('sass', function () {
 gulp.task('image', () =>
   gulp.src('assets/img/*')
     .pipe(imagemin())
-    .pipe(gulp.dest('assets/img/*'))
+    .pipe(gulp.dest('assets/img/'))
 );
