@@ -262,7 +262,10 @@ button {
       padding: 25px;
       -webkit-box-shadow: -1px 10px 40px 10px #e8eaec;
       -moz-box-shadow: -1px 10px 40px 10px #e8eaec;
-      box-shadow: -1px 10px 40px 10px #e8eaec; }
+      box-shadow: -1px 10px 40px 10px #e8eaec;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
       .main__info .info__blocks .info__item div {
         display: flex;
         justify-content: space-between;
