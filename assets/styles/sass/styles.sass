@@ -58,15 +58,6 @@ button
 .header__menu
   position: relative
   padding: 20px 135px 0 135px
-.menu-list__new
-  background: linear-gradient(150deg, #f87b59, #ec5068 50%);
-  border-radius: 50%
-  padding: 12px 19px
-  position: absolute
-  font-size: 25px
-  right: 135px
-  color: white
-  top: 42px
 .menu-list
   display: flex
   list-style: none
@@ -75,13 +66,22 @@ button
   font-family: "opensans"
   font-size: 16px
   padding-bottom: 30px
-.menu-list__item
-  position: relative
-  .menu-list__active
+  &__new
+    background: linear-gradient(150deg, #f87b59, #ec5068 50%);
+    border-radius: 50%
+    padding: 12px 19px
+    position: absolute
+    font-size: 25px
+    right: 135px
+    color: white
+    top: 42px
+  &__item
+    position: relative
+  &__active
     color: #3e4056 !important
     font-weight: bold
     position: relative
-  .menu-list__active:after
+  &__active:after
     position: absolute
     content: ''
     width: 100%
@@ -91,11 +91,11 @@ button
     background: linear-gradient(90deg, #f87b59, #ec5068);
     left: 0
     bottom: -28px
-.menu-list__item a
-  text-decoration: none
-  color: #c5c5cc
-.menu-list__item:nth-child(2)
-  margin: 0 39px
+  &__link 
+    text-decoration: none
+    color: #c5c5cc
+  &__item:nth-child(2)
+    margin: 0 39px
 
 .main-block
   padding: 70px 135px
@@ -105,7 +105,7 @@ button
   box-shadow: inset -1px 13px 19px 0px rgba(234,236,239,1)
   min-height: calc(100vh - 265px)
   display: flex
-  .main-block__user
+  &__user
     width: 30%
     font-family: 'monseratt'
     position: relative
@@ -150,48 +150,48 @@ button
       transform: rotate(90deg)
       top: -10px
       right: -50px
-  .user-detail
-    display: flex
-    justify-content: flex-start
-    &__block
+    .user-detail
       display: flex
-      flex-direction: column
-      margin-left: 25px
-    &__name
-      font-size: 24px
-      font-weight: bold
-      margin-bottom: 15px
-    &__email
-      color:#828495
-    &__edit
-      margin-top: 20px
-      color: #f17076
-      position: relative 
-    &__edit::before
-      content: ""
-      background: url(../../img/pencil.png) no-repeat center
-      position: absolute
-      width: 20px
-      height: 20px
-      left: 0
-      top: -3px
-  .user__follows
-    display: flex
-    flex-direction: row
-    justify-content: space-between
-    padding-right: 60px
-    margin: 35px 0 35px 0
-    .follows 
+      justify-content: flex-start
+      &__block
+        display: flex
+        flex-direction: column
+        margin-left: 25px
+      &__name
+        font-size: 24px
+        font-weight: bold
+        margin-bottom: 15px
+      &__email
+        color:#828495
+      &__edit
+        margin-top: 20px
+        color: #f17076
+        position: relative 
+      &__edit::before
+        content: ""
+        background: url(../../img/pencil.png) no-repeat center
+        position: absolute
+        width: 20px
+        height: 20px
+        left: 0
+        top: -3px
+    .user__follows
       display: flex
-      flex-direction: column
-      align-items: center
-    .follows span
-      color: #6e6f82
-      font-weight: bold
-  .user__info
-    font-family: 'opensans'
-    color: #4d4e65
-    font-size: 18px
+      flex-direction: row
+      justify-content: space-between
+      padding-right: 60px
+      margin: 35px 0 35px 0
+      .follows 
+        display: flex
+        flex-direction: column
+        align-items: center
+      .follows span
+        color: #6e6f82
+        font-weight: bold
+    .user__info
+      font-family: 'opensans'
+      color: #4d4e65
+      font-size: 18px
 
 .main-info
   display: flex;
@@ -260,60 +260,60 @@ button
     #button-1 .knobs:before,
     #button-1 .layer 
       transition: 0.3s ease all
-  .main-info__blocks
+  &__blocks
     margin-top: 50px
     padding-left: 70px
     display: grid
     grid-template-columns: repeat(2, 1fr)
     grid-column-gap: 20px
     grid-row-gap: 20px
-    .main-info__item
-      background-color: white
-      border-radius: 5px
-      font-family: 'monseratt'
-      color: #3e4056
-      padding: 25px
-      -webkit-box-shadow: -1px 10px 40px 10px rgba(232,234,236,1)
-      -moz-box-shadow: -1px 10px 40px 10px rgba(232,234,236,1)
-      box-shadow: -1px 10px 40px 10px rgba(232,234,236,1)
+  &__item
+    background-color: white
+    border-radius: 5px
+    font-family: 'monseratt'
+    color: #3e4056
+    padding: 25px
+    -webkit-box-shadow: -1px 10px 40px 10px rgba(232,234,236,1)
+    -moz-box-shadow: -1px 10px 40px 10px rgba(232,234,236,1)
+    box-shadow: -1px 10px 40px 10px rgba(232,234,236,1)
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    div
       display: flex
-      flex-direction: column
       justify-content: space-between
-      div
-        display: flex
-        justify-content: space-between
-        margin-top: 50px
-      .weblink
-        padding-left: 20px
-        position: relative
-      .weblink:before
-        position: absolute
-        background: url(../../img/web.png) no-repeat center
-        width: 20px
-        height: 20px 
-        content: ""
-        left: 0
-      .main-info__shares
-        white-space: nowrap;
-        overflow: hidden !important;
-        text-overflow: ellipsis;
-        font-weight: bold
-        margin-bottom: 22px
-        .main-info__link
-          background-color: #ecf1f8
-          border-radius: 10px
-          text-decoration: none
-          color: #3e4056
-          padding: 5px
-      .main-info__text
-        font-size: 36px
-      .main-info__name
-        font-size: 14px
-        display: flex
-        align-items: center
-        img
-          margin-right: 5px 
-      .main-info__share
-        font-size: 14px
-        color: #f17076
+      margin-top: 50px
+    .weblink
+      padding-left: 20px
+      position: relative
+    .weblink:before
+      position: absolute
+      background: url(../../img/web.png) no-repeat center
+      width: 20px
+      height: 20px 
+      content: ""
+      left: 0
+    .main-info__shares
+      white-space: nowrap;
+      overflow: hidden !important;
+      text-overflow: ellipsis;
+      font-weight: bold
+      margin-bottom: 22px
+      .main-info__link
+        background-color: #ecf1f8
+        border-radius: 10px
+        text-decoration: none
+        color: #3e4056
+        padding: 5px
+    .main-info__text
+      font-size: 36px
+    .main-info__name
+      font-size: 14px
+      display: flex
+      align-items: center
+      img
+        margin-right: 5px 
+    .main-info__share
+      font-size: 14px
+      color: #f17076
 

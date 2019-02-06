@@ -1,11 +1,11 @@
 @media (min-width: 1181px) and (max-width: 1370px) {
   .main-info {
     padding-left: 70px; }
-    .main-info .main-info__blocks {
+    .main-info__blocks {
       grid-template-columns: repeat(1, 1fr);
       padding-left: 0;
       margin-top: 50p; }
-    .main-info .main-info__header {
+    .main-info__header {
       padding-left: 10px; } }
 
 @media (min-width: 320px) and (max-width: 1180px) {
@@ -13,15 +13,15 @@
     padding: 70px 15px;
     flex-direction: column;
     align-items: center; }
-    .main-block .main-block__user {
+    .main-block__user {
       display: block;
       width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center; }
-      .main-block .main-block__user .user-report {
+      .main-block__user .user-report {
         right: 100px; }
-      .main-block .main-block__user .user-hidden {
+      .main-block__user .user-hidden {
         right: 30px; }
     .main-block .user__follows {
       padding-right: 0;
@@ -36,14 +36,14 @@
   .main-info {
     margin-top: 50px;
     width: 100%; }
-    .main-info .main-info__header {
+    .main-info__header {
       padding-left: 0;
       justify-content: center; }
-    .main-info .main-info__blocks {
+    .main-info__blocks {
       display: flex;
       flex-direction: column;
       padding-left: 0; }
-    .main-info .main-info__item {
+    .main-info__item {
       margin-top: 50px; } }
 
 @media (min-width: 320px) and (max-width: 764px) {
@@ -51,10 +51,10 @@
     padding: 20px 15px 0 15px;
     flex-direction: column;
     text-align: center; }
-  .header-top__profile {
-    justify-content: center;
-    margin: 15px 0;
-    width: 100%; }
+    .header-top__profile {
+      justify-content: center;
+      margin: 15px 0;
+      width: 100%; }
   .header__menu {
     display: flex;
     padding: 0 15px;
