@@ -18,46 +18,46 @@ button {
   padding: 20px 135px 0 135px;
   font-family: 'opensans';
   font-size: 16px; }
-  .header-top {
+  .header .header-top {
     display: flex;
     align-items: center;
     margin-bottom: 25px; }
-    .header-top__name {
+    .header .header-top__main {
       width: 50%;
       font-size: 18px;
       color: #5a5c6f;
       font-weight: bold; }
-    .header-top__profile {
+    .header .header-top__profile {
       display: flex;
       flex-direction: row;
       width: 50%;
       align-items: center;
       justify-content: flex-end; }
-  .header .profile__name {
-    cursor: pointer;
-    display: flex;
-    color: #6b6d7d;
-    align-items: center; }
-  .header .profile__name img {
-    margin: 0 10px 0 20px; }
-  .header .profile__options {
-    width: 20px;
-    height: 20px;
-    background: url(../../img/arrow.png) no-repeat center;
-    margin-right: 20px; }
-  .header .profile__bell {
-    width: 20px;
-    height: 20px;
-    background: url(../../img/bell.png) no-repeat center; }
-  .header .profile__gift {
-    width: 20px;
-    height: 20px;
-    margin: 0 15px;
-    background: url(../../img/gift.png) no-repeat center; }
-  .header .profile__message {
-    width: 20px;
-    height: 20px;
-    background: url(../../img/m.png) no-repeat center; }
+    .header .header-top__name {
+      cursor: pointer;
+      display: flex;
+      color: #6b6d7d;
+      align-items: center; }
+      .header .header-top__name img {
+        margin: 0 10px 0 20px; }
+    .header .header-top__options {
+      width: 20px;
+      height: 20px;
+      background: url(../../img/arrow.png) no-repeat center;
+      margin-right: 20px; }
+    .header .header-top__bell {
+      width: 20px;
+      height: 20px;
+      background: url(../../img/bell.png) no-repeat center; }
+    .header .header-top__gift {
+      width: 20px;
+      height: 20px;
+      margin: 0 15px;
+      background: url(../../img/gift.png) no-repeat center; }
+    .header .header-top__message {
+      width: 20px;
+      height: 20px;
+      background: url(../../img/m.png) no-repeat center; }
   .header .header__menu {
     position: relative; }
   .header .menu-list__new {
