@@ -16,16 +16,16 @@ button
   padding: 20px 135px 0 135px
   font-family: 'opensans'
   font-size: 16px
-  .header__top
+  .header-top
     display: flex
     align-items: center
     margin-bottom: 25px
-  .header__name
+  .header-top__name
     width: 50%
     font-size: 18px
     color: #5a5c6f
     font-weight: bold
-  .header__profile
+  .header-top__profile
     display: flex
     flex-direction: row
     width: 50%
@@ -58,7 +58,7 @@ button
     background: url(../../img/m.png) no-repeat center
   .header__menu
     position: relative
-  .menu__new
+  .menu-list__new
     background: linear-gradient(150deg, #f87b59, #ec5068 50%);
     border-radius: 50%
     padding: 12px 22px
@@ -67,7 +67,7 @@ button
     right: 0
     color: white
     top: 18px
-  .menu__list
+  .menu-list
     display: flex
     list-style: none
     padding-left: 0
@@ -75,13 +75,13 @@ button
     font-family: "opensans"
     font-size: 16px
     padding-bottom: 30px
-  .list__item
+  .menu-list__item
     position: relative
-    .list__active
+    .menu-list__active
       color: #3e4056 !important
       font-weight: bold
       position: relative
-    .list__active:after
+    .menu-list__active:after
       position: absolute
       content: ''
       width: 100%
@@ -91,13 +91,13 @@ button
       background: linear-gradient(90deg, #f87b59, #ec5068);
       left: 0
       bottom: -28px
-  .list__item a
+  .menu-list__item a
     text-decoration: none
     color: #c5c5cc
-  .list__item:nth-child(2)
+  .menu-list__item:nth-child(2)
     margin: 0 39px
 
-.main__block
+.main-block
   padding: 70px 135px
   background-color: #f7f9fc
   -webkit-box-shadow: inset -1px 13px 19px 0px rgba(234,236,239,1)
@@ -105,11 +105,11 @@ button
   box-shadow: inset -1px 13px 19px 0px rgba(234,236,239,1)
   min-height: calc(100vh - 265px)
   display: flex
-  .main__user
+  .main-block__user
     width: 30%
     font-family: 'monseratt'
     position: relative
-    .user__hidden
+    .user-hidden
       display: none
       flex-direction: column
       padding: 30px 0
@@ -127,14 +127,14 @@ button
         font-weight: bold
         position: relative
         text-align: left
-      .report:before
+      .user-hidden__report:before
         position: absolute
         content: ''
         width: 20px
         height: 20px
         left: 35px
         background: url(../../img/deletecopy.png) no-repeat center
-      .block:before
+      .user-hidden__block:before
         width: 20px
         left: 35px
         height: 20px
@@ -143,31 +143,31 @@ button
         background: url(../../img/block.png) no-repeat center
       button:hover
         background-color: #f3f6fa
-    .user__report
+    .user-report
       position: absolute
       font-weight: bold
       font-size: 35px
       transform: rotate(90deg)
       top: -10px
       right: -50px
-  .user__detail
+  .user-detail
     display: flex
     justify-content: flex-start
-    .user__block
+    .user-detail__block
       display: flex
       flex-direction: column
       margin-left: 25px
-    .user__name
+    .user-detail__name
       font-size: 24px
       font-weight: bold
       margin-bottom: 15px
-    .user__email
+    .user-detail__email
       color:#828495
-    .user__edit
+    .user-detail__edit
       margin-top: 20px
       color: #f17076
       position: relative 
-    .user__edit::before
+    .user-detail__edit::before
       content: ""
       background: url(../../img/pencil.png) no-repeat center
       position: absolute
@@ -193,13 +193,13 @@ button
     color: #4d4e65
     font-size: 18px
 
-.main__info
+.main-info
   display: flex;
   width: 70%;
   flex-direction: column
   font-family: 'opensans'
   font-size: 18px
-  .info__header
+  .main-info__header
     display: flex
     padding-left: 70px
     .layer 
@@ -260,14 +260,14 @@ button
     #button-1 .knobs:before,
     #button-1 .layer 
       transition: 0.3s ease all
-  .info__blocks
+  .main-info__blocks
     margin-top: 50px
     padding-left: 70px
     display: grid
     grid-template-columns: repeat(2, 1fr)
     grid-column-gap: 20px
     grid-row-gap: 20px
-    .info__item
+    .main-info__item
       background-color: white
       border-radius: 5px
       font-family: 'monseratt'
@@ -293,27 +293,27 @@ button
         height: 20px 
         content: ""
         left: 0
-      .info__shares
+      .main-info__shares
         white-space: nowrap;
         overflow: hidden !important;
         text-overflow: ellipsis;
         font-weight: bold
         margin-bottom: 22px
-        .info__link
+        .main-info__link
           background-color: #ecf1f8
           border-radius: 10px
           text-decoration: none
           color: #3e4056
           padding: 5px
-      .item__text
+      .main-info__text
         font-size: 36px
-      .item__name
+      .main-info__name
         font-size: 14px
         display: flex
         align-items: center
         img
           margin-right: 5px 
-      .item__share
+      .main-info__share
         font-size: 14px
         color: #f17076
 

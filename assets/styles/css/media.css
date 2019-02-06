@@ -1,59 +1,59 @@
 @media (min-width: 1181px) and (max-width: 1370px) {
-  .main__info {
+  .main-info {
     padding-left: 70px; }
-    .main__info .info__blocks {
+    .main-info .main-info__blocks {
       grid-template-columns: repeat(1, 1fr);
       padding-left: 0;
       margin-top: 50p; }
-    .main__info .info__header {
+    .main-info .main-info__header {
       padding-left: 10px; } }
 
 @media (min-width: 320px) and (max-width: 1180px) {
   .header {
     padding: 20px 15px 0 15px; }
-    .header .header__profile {
+    .header .header-top__profile {
       width: 100%; }
-  .main__block {
+  .main-block {
     padding: 70px 15px;
     flex-direction: column;
     align-items: center; }
-    .main__block .main__user {
+    .main-block .main-block__user {
       display: block;
       width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center; }
-      .main__block .main__user .user__report {
+      .main-block .main-block__user .user-report {
         right: 100px; }
-      .main__block .main__user .user__hidden {
+      .main-block .main-block__user .user-hidden {
         right: 30px; }
-    .main__block .user__follows {
+    .main-block .user__follows {
       padding-right: 0;
       width: 100%;
       justify-content: space-evenly; }
-    .main__block .user__detail {
+    .main-block .user-detail {
       flex-direction: column;
       align-items: center;
       text-align: center; }
-      .main__block .user__detail .user__block {
+      .main-block .user-detail .user-detail__block {
         margin-left: 0; }
-  .main__info {
+  .main-info {
     margin-top: 50px;
     width: 100%; }
-    .main__info .info__header {
+    .main-info .main-info__header {
       padding-left: 0;
       justify-content: center; }
-    .main__info .info__blocks {
+    .main-info .main-info__blocks {
       grid-template-columns: repeat(1, 1fr);
       padding-left: 0;
       margin-top: 50px; } }
 
 @media (min-width: 320px) and (max-width: 600px) {
-  .header .header__top {
+  .header .header-top {
     flex-direction: column;
     text-align: center; }
-  .header .header__profile {
+  .header .header-top__profile {
     justify-content: center;
     margin: 15px 0; }
-  .main__info .info__blocks .info__item .info__shares {
+  .main-info .main-info__blocks .main-info__item .main-info__shares {
     white-space: normal; } }
