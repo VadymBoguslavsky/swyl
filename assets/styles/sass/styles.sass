@@ -16,21 +16,21 @@ button
   padding: 20px 135px 0 135px
   font-family: 'opensans'
   font-size: 16px
-  .header-top
+  &-top
     display: flex
     align-items: center
     margin-bottom: 25px
-  .header-top__name
-    width: 50%
-    font-size: 18px
-    color: #5a5c6f
-    font-weight: bold
-  .header-top__profile
-    display: flex
-    flex-direction: row
-    width: 50%
-    align-items: center
-    justify-content: flex-end
+    &__name
+      width: 50%
+      font-size: 18px
+      color: #5a5c6f
+      font-weight: bold
+    &__profile
+      display: flex
+      flex-direction: row
+      width: 50%
+      align-items: center
+      justify-content: flex-end
   .profile__name
     cursor: pointer
     display: flex
@@ -153,21 +153,21 @@ button
   .user-detail
     display: flex
     justify-content: flex-start
-    .user-detail__block
+    &__block
       display: flex
       flex-direction: column
       margin-left: 25px
-    .user-detail__name
+    &__name
       font-size: 24px
       font-weight: bold
       margin-bottom: 15px
-    .user-detail__email
+    &__email
       color:#828495
-    .user-detail__edit
+    &__edit
       margin-top: 20px
       color: #f17076
       position: relative 
-    .user-detail__edit::before
+    &__edit::before
       content: ""
       background: url(../../img/pencil.png) no-repeat center
       position: absolute
@@ -199,7 +199,7 @@ button
   flex-direction: column
   font-family: 'opensans'
   font-size: 18px
-  .main-info__header
+  &__header
     display: flex
     padding-left: 70px
     .layer 

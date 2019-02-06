@@ -18,21 +18,21 @@ button {
   padding: 20px 135px 0 135px;
   font-family: 'opensans';
   font-size: 16px; }
-  .header .header-top {
+  .header-top {
     display: flex;
     align-items: center;
     margin-bottom: 25px; }
-  .header .header-top__name {
-    width: 50%;
-    font-size: 18px;
-    color: #5a5c6f;
-    font-weight: bold; }
-  .header .header-top__profile {
-    display: flex;
-    flex-direction: row;
-    width: 50%;
-    align-items: center;
-    justify-content: flex-end; }
+    .header-top__name {
+      width: 50%;
+      font-size: 18px;
+      color: #5a5c6f;
+      font-weight: bold; }
+    .header-top__profile {
+      display: flex;
+      flex-direction: row;
+      width: 50%;
+      align-items: center;
+      justify-content: flex-end; }
   .header .profile__name {
     cursor: pointer;
     display: flex;
@@ -155,21 +155,21 @@ button {
   .main-block .user-detail {
     display: flex;
     justify-content: flex-start; }
-    .main-block .user-detail .user-detail__block {
+    .main-block .user-detail__block {
       display: flex;
       flex-direction: column;
       margin-left: 25px; }
-    .main-block .user-detail .user-detail__name {
+    .main-block .user-detail__name {
       font-size: 24px;
       font-weight: bold;
       margin-bottom: 15px; }
-    .main-block .user-detail .user-detail__email {
+    .main-block .user-detail__email {
       color: #828495; }
-    .main-block .user-detail .user-detail__edit {
+    .main-block .user-detail__edit {
       margin-top: 20px;
       color: #f17076;
       position: relative; }
-    .main-block .user-detail .user-detail__edit::before {
+    .main-block .user-detail__edit::before {
       content: "";
       background: url(../../img/pencil.png) no-repeat center;
       position: absolute;
@@ -201,25 +201,25 @@ button {
   flex-direction: column;
   font-family: 'opensans';
   font-size: 18px; }
-  .main-info .main-info__header {
+  .main-info__header {
     display: flex;
     padding-left: 70px; }
-    .main-info .main-info__header .layer {
+    .main-info__header .layer {
       position: absolute;
       top: 0;
       right: 0;
       bottom: 0;
       left: 0; }
-    .main-info .main-info__header .button {
+    .main-info__header .button {
       position: relative;
       width: 40px;
       height: 25px;
       margin: 0 30px;
       overflow: hidden; }
-    .main-info .main-info__header .button.r,
-    .main-info .main-info__header .button.r .layer {
+    .main-info__header .button.r,
+    .main-info__header .button.r .layer {
       border-radius: 100px; }
-    .main-info .main-info__header .checkbox {
+    .main-info__header .checkbox {
       position: relative;
       width: 100%;
       height: 100%;
@@ -228,14 +228,14 @@ button {
       opacity: 0;
       cursor: pointer;
       z-index: 3; }
-    .main-info .main-info__header .knobs {
+    .main-info__header .knobs {
       z-index: 2; }
-    .main-info .main-info__header .layer {
+    .main-info__header .layer {
       width: 100%;
       background-color: #ed5267;
       transition: 0.3s ease all;
       z-index: 1; }
-    .main-info .main-info__header #button-1 .knobs:before {
+    .main-info__header #button-1 .knobs:before {
       content: '';
       position: absolute;
       top: 3px;
@@ -252,15 +252,15 @@ button {
       background-color: white;
       border-radius: 50%;
       transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all; }
-    .main-info .main-info__header #button-1 .checkbox:checked + .knobs:before {
+    .main-info__header #button-1 .checkbox:checked + .knobs:before {
       content: '';
       left: 17px;
       background-color: white; }
-    .main-info .main-info__header #button-1 .checkbox:checked ~ .layer {
+    .main-info__header #button-1 .checkbox:checked ~ .layer {
       background-color: #ed5267; }
-    .main-info .main-info__header #button-1 .knobs,
-    .main-info .main-info__header #button-1 .knobs:before,
-    .main-info .main-info__header #button-1 .layer {
+    .main-info__header #button-1 .knobs,
+    .main-info__header #button-1 .knobs:before,
+    .main-info__header #button-1 .layer {
       transition: 0.3s ease all; }
   .main-info .main-info__blocks {
     margin-top: 50px;
