@@ -12,90 +12,90 @@ button
   outline: none
   cursor: pointer
 
-.header
+.header-top
+  display: flex
+  align-items: center
+  margin-bottom: 25px
   padding: 20px 135px 0 135px
   font-family: 'opensans'
   font-size: 16px
-  .header-top
+  &__main
+    width: 50%
+    font-size: 18px
+    color: #5a5c6f
+    font-weight: bold
+  &__profile
     display: flex
+    flex-direction: row
+    width: 50%
     align-items: center
-    margin-bottom: 25px
-    &__main
-      width: 50%
-      font-size: 18px
-      color: #5a5c6f
-      font-weight: bold
-    &__profile
-      display: flex
-      flex-direction: row
-      width: 50%
-      align-items: center
-      justify-content: flex-end
-    &__name
-      cursor: pointer
-      display: flex
-      color: #6b6d7d
-      align-items: center
-      & img
-        margin: 0 10px 0 20px
-    &__options
-      width: 20px
-      height: 20px
-      background: url(../../img/arrow.png) no-repeat center
-      margin-right: 20px 
-    &__bell
-      width: 20px
-      height: 20px
-      background: url(../../img/bell.png) no-repeat center
-    &__gift
-      width: 20px
-      height: 20px
-      margin: 0 15px
-      background: url(../../img/gift.png) no-repeat center
-    &__message
-      width: 20px
-      height: 20px
-      background: url(../../img/m.png) no-repeat center
-  .header__menu
-    position: relative
-  .menu-list__new
-    background: linear-gradient(150deg, #f87b59, #ec5068 50%);
-    border-radius: 50%
-    padding: 12px 22px
-    position: absolute
-    font-size: 25px
-    right: 0
-    color: white
-    top: 18px
-  .menu-list
+    justify-content: flex-end
+  &__name
+    cursor: pointer
     display: flex
-    list-style: none
-    padding-left: 0
-    text-transform: uppercase
-    font-family: "opensans"
-    font-size: 16px
-    padding-bottom: 30px
-  .menu-list__item
+    color: #6b6d7d
+    align-items: center
+  &__image
+      margin: 0 10px 0 20px
+  &__options
+    width: 20px
+    height: 20px
+    background: url(../../img/arrow.png) no-repeat center
+    margin-right: 20px 
+  &__bell
+    width: 20px
+    height: 20px
+    background: url(../../img/bell.png) no-repeat center
+  &__gift
+    width: 20px
+    height: 20px
+    margin: 0 15px
+    background: url(../../img/gift.png) no-repeat center
+  &__message
+    width: 20px
+    height: 20px
+    background: url(../../img/m.png) no-repeat center
+.header__menu
+  position: relative
+  padding: 20px 135px 0 135px
+.menu-list__new
+  background: linear-gradient(150deg, #f87b59, #ec5068 50%);
+  border-radius: 50%
+  padding: 12px 19px
+  position: absolute
+  font-size: 25px
+  right: 135px
+  color: white
+  top: 42px
+.menu-list
+  display: flex
+  list-style: none
+  padding-left: 0
+  text-transform: uppercase
+  font-family: "opensans"
+  font-size: 16px
+  padding-bottom: 30px
+.menu-list__item
+  position: relative
+  .menu-list__active
+    color: #3e4056 !important
+    font-weight: bold
     position: relative
-    .menu-list__active
-      color: #3e4056 !important
-      font-weight: bold
-      position: relative
-    .menu-list__active:after
-      position: absolute
-      content: ''
-      width: 100%
-      color: #3e4056 !important
-      font-weight: bold
-      height: 5px
-      background: linear-gradient(90deg, #f87b59, #ec5068);
-      left: 0
-      bottom: -28px
-  .menu-list__item a
-    text-decoration: none
-    color: #c5c5cc
-  .menu-list__item:nth-child(2)
-    margin: 0 39px
+  .menu-list__active:after
+    position: absolute
+    content: ''
+    width: 100%
+    color: #3e4056 !important
+    font-weight: bold
+    height: 5px
+    background: linear-gradient(90deg, #f87b59, #ec5068);
+    left: 0
+    bottom: -28px
+.menu-list__item a
+  text-decoration: none
+  color: #c5c5cc
+.menu-list__item:nth-child(2)
+  margin: 0 39px
 
 .main-block
   padding: 70px 135px

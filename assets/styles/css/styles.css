@@ -14,90 +14,96 @@ button {
   outline: none;
   cursor: pointer; }
 
-.header {
+.header-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
   padding: 20px 135px 0 135px;
   font-family: 'opensans';
   font-size: 16px; }
-  .header .header-top {
+  .header-top__main {
+    width: 50%;
+    font-size: 18px;
+    color: #5a5c6f;
+    font-weight: bold; }
+  .header-top__profile {
     display: flex;
+    flex-direction: row;
+    width: 50%;
     align-items: center;
-    margin-bottom: 25px; }
-    .header .header-top__main {
-      width: 50%;
-      font-size: 18px;
-      color: #5a5c6f;
-      font-weight: bold; }
-    .header .header-top__profile {
-      display: flex;
-      flex-direction: row;
-      width: 50%;
-      align-items: center;
-      justify-content: flex-end; }
-    .header .header-top__name {
-      cursor: pointer;
-      display: flex;
-      color: #6b6d7d;
-      align-items: center; }
-      .header .header-top__name img {
-        margin: 0 10px 0 20px; }
-    .header .header-top__options {
-      width: 20px;
-      height: 20px;
-      background: url(../../img/arrow.png) no-repeat center;
-      margin-right: 20px; }
-    .header .header-top__bell {
-      width: 20px;
-      height: 20px;
-      background: url(../../img/bell.png) no-repeat center; }
-    .header .header-top__gift {
-      width: 20px;
-      height: 20px;
-      margin: 0 15px;
-      background: url(../../img/gift.png) no-repeat center; }
-    .header .header-top__message {
-      width: 20px;
-      height: 20px;
-      background: url(../../img/m.png) no-repeat center; }
-  .header .header__menu {
-    position: relative; }
-  .header .menu-list__new {
-    background: linear-gradient(150deg, #f87b59, #ec5068 50%);
-    border-radius: 50%;
-    padding: 12px 22px;
-    position: absolute;
-    font-size: 25px;
-    right: 0;
-    color: white;
-    top: 18px; }
-  .header .menu-list {
+    justify-content: flex-end; }
+  .header-top__name {
+    cursor: pointer;
     display: flex;
-    list-style: none;
-    padding-left: 0;
-    text-transform: uppercase;
-    font-family: "opensans";
-    font-size: 16px;
-    padding-bottom: 30px; }
-  .header .menu-list__item {
+    color: #6b6d7d;
+    align-items: center; }
+  .header-top__image {
+    margin: 0 10px 0 20px; }
+  .header-top__options {
+    width: 20px;
+    height: 20px;
+    background: url(../../img/arrow.png) no-repeat center;
+    margin-right: 20px; }
+  .header-top__bell {
+    width: 20px;
+    height: 20px;
+    background: url(../../img/bell.png) no-repeat center; }
+  .header-top__gift {
+    width: 20px;
+    height: 20px;
+    margin: 0 15px;
+    background: url(../../img/gift.png) no-repeat center; }
+  .header-top__message {
+    width: 20px;
+    height: 20px;
+    background: url(../../img/m.png) no-repeat center; }
+
+.header__menu {
+  position: relative;
+  padding: 20px 135px 0 135px; }
+
+.menu-list__new {
+  background: linear-gradient(150deg, #f87b59, #ec5068 50%);
+  border-radius: 50%;
+  padding: 12px 19px;
+  position: absolute;
+  font-size: 25px;
+  right: 135px;
+  color: white;
+  top: 42px; }
+
+.menu-list {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  text-transform: uppercase;
+  font-family: "opensans";
+  font-size: 16px;
+  padding-bottom: 30px; }
+
+.menu-list__item {
+  position: relative; }
+  .menu-list__item .menu-list__active {
+    color: #3e4056 !important;
+    font-weight: bold;
     position: relative; }
-    .header .menu-list__item .menu-list__active {
-      color: #3e4056 !important;
-      font-weight: bold;
-      position: relative; }
-    .header .menu-list__item .menu-list__active:after {
-      position: absolute;
-      content: '';
-      width: 100%;
-      color: #3e4056 !important;
-      font-weight: bold;
-      height: 5px;
-      background: linear-gradient(90deg, #f87b59, #ec5068);
-      left: 0;
-      bottom: -28px; }
-  .header .menu-list__item a {
-    text-decoration: none;
-    color: #c5c5cc; }
-  .header .menu-list__item:nth-child(2) {
-    margin: 0 39px; }
+  .menu-list__item .menu-list__active:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    color: #3e4056 !important;
+    font-weight: bold;
+    height: 5px;
+    background: linear-gradient(90deg, #f87b59, #ec5068);
+    left: 0;
+    bottom: -28px; }
+
+.menu-list__item a {
+  text-decoration: none;
+  color: #c5c5cc; }
+
+.menu-list__item:nth-child(2) {
+  margin: 0 39px; }
 
 .main-block {
   padding: 70px 135px;
