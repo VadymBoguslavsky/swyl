@@ -14,9 +14,9 @@
   for(var i = 0; i<main.length; i++){
     var all = main[i];
     all.addEventListener('click', function (e) {
-      var remove = document.querySelector('.menu-list__active')
-      remove.classList.remove('menu-list__active')
-      e.currentTarget.classList.add('menu-list__active')
+      var remove = document.querySelector('.menu-list--active')
+      remove.classList.remove('menu-list--active')
+      e.currentTarget.classList.add('menu-list--active')
     })
   }
 })();

@@ -81,11 +81,11 @@ button {
     top: 42px; }
   .menu-list__item {
     position: relative; }
-  .menu-list__active {
+  .menu-list--active {
     color: #3e4056 !important;
     font-weight: bold;
     position: relative; }
-  .menu-list__active:after {
+  .menu-list--active:after {
     position: absolute;
     content: '';
     width: 100%;
